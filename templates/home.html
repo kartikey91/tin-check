@@ -20,7 +20,7 @@
     $('#checkBtn').on('click', function() {
       $.ajax({
         method: 'GET',
-        url: 'http://localhost:5000/check/' + $('#tin').val(),
+        url: './check/' + $('#tin').val(),
         success: function(data) {
           if (data.valid) {
             $('#result').html('<a href="' + data.url + '">Click Here to view details</a>');
